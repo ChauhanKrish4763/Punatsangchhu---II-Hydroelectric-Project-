@@ -10,10 +10,8 @@ const Navbar = () => {
         switch (location.pathname) {
             case '/':
                 return 'transparent';
-            case '/read_more':
-                return '#27ae60';
             default:
-                return '#ffffff';
+                return '#27ae60';
         }
     };
 

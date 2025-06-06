@@ -1,0 +1,87 @@
+body {
+  background-color: #f9f9f9;
+}
+
+.chairman-page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 80px 60px 80px 120px; /* doubled top right bottom left */
+  text-align: center;
+  opacity: 0; /* Initially hidden */
+  transform: translateY(20px);
+  animation: fadeUp 1s ease-out forwards;
+  animation-delay: 0.1s; /* Reduced from 0.2s */
+}
+
+.chairman-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #333;
+  opacity: 0; /* Initially hidden */
+  transform: translateY(20px);
+  animation: fadeUp 1s ease-out forwards;
+  animation-delay: 0.2s; /* Reduced from 0.4s */
+}
+
+.chairman-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Vertically center text */
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  text-align: left;
+  opacity: 0; /* Initially hidden */
+  transform: translateY(20px);
+  animation: fadeUp 1s ease-out forwards;
+  animation-delay: 0.3s; /* Reduced from 0.6s */
+}
+
+.chairman-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0; /* Initially hidden */
+  transform: translateY(20px);
+  animation: fadeUp 1s ease-out forwards;
+  animation-delay: 0.4s; /* Reduced from 0.8s */
+}
+
+.chairman-img {
+  max-width: 320px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  opacity: 0; /* Initially hidden */
+  transform: translateY(20px);
+  animation: fadeUp 1s ease-out forwards;
+  animation-delay: 0.5s; /* Reduced from 1.0s */
+}
+
+.chairman-text {
+  max-width: 500px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically center within available height */
+  height: 100%; /* Allow vertical centering within flex parent */
+  opacity: 0; /* Initially hidden */
+  transform: translateY(20px);
+  animation: fadeUp 1s ease-out forwards;
+  animation-delay: 0.6s; /* Reduced from 1.2s */
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
