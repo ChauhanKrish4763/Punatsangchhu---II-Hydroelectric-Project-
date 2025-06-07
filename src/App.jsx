@@ -86,19 +86,6 @@ function App() {
     <div className="container">
       {/* Hero Section */}
       <section className="hero-section">
-        <nav className="navbar">
-          <div className="logo-container">
-            <img src={logo} alt="Logo" className="logo" />
-            <span className="project-title">
-              Punatsangchhu - II Hydroelectric Project Authority
-            </span>
-          </div>
-          <div className="nav-links">
-            <a href="home">HOME</a>
-            <a href="#about">ABOUT</a>
-            <a href="#media">EMPLOYEES</a>
-          </div>
-        </nav>
         <div className="slider">
           {sliderImages.map((img, index) => (
             <div

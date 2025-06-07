@@ -22,7 +22,6 @@ const Navbar = () => {
         >
             <div className="logo-container">
                 <img src={logo} alt="Logo" className="logo" />
-                <span className="project-title">Punatsangchhu - II Hydroelectric Project Authority</span>
             </div>
             <div className="nav-links">
                 <Link to="/">HOME</Link>
