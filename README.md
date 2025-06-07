@@ -1,12 +1,22 @@
-# React + Vite
+# Punatsangchhu-II Hydroelectric Project Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This website presents an overview of the Punatsangchhu-II Hydroelectric Project (PHEP-II), a major 1,020 MW run-of-the-river hydroelectric initiative located in Bhutan. Developed jointly by the Governments of Bhutan and India, the project harnesses the energy from the confluence of the Phochhu and Mochhu rivers at Punakha to generate clean, sustainable electricity.
 
-Currently, two official plugins are available:
+## 🌊 About the Project
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The diversion dam for PHEP-II is situated approximately 20 kilometers downstream of the Wangduephodrang Bridge, with an underground powerhouse located at Kamechu. Designed to support Bhutan's growing energy needs and economic development, the project exemplifies regional cooperation and environmentally responsible engineering.
 
-## Expanding the ESLint configuration
+A Technical Coordination Committee comprising representatives from both governments oversees the project's technical execution and progress.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📄 License
+
+All rights reserved © 2025 Punatsangchhu-II Hydroelectric Project Authority.  
+This repository is provided for educational and informational purposes only.  
+Commercial use, distribution, or modification without permission is strictly prohibited. See [LICENSE](./LICENSE) for full terms.
+
+## 📬 Contact
+
+For official inquiries, permissions, or additional information, please contact:  
+📧 itweb@phpa2.gov.bt
+
+---
