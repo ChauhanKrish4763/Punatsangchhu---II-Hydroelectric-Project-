@@ -6,6 +6,7 @@ import App from './App.jsx';
 import ReadMore from './pages/ReadMore';
 import Navbar from './pages/Navbar';
 import Management from './pages/Management';
+import Authority from './pages/Authority.jsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -19,6 +20,7 @@ createRoot(document.getElementById('root')).render(
         <Route path="/joint_managing_director" element={<Management />} />
         <Route path="/director_technical" element={<Management />} />
         <Route path="/director_finance" element={<Management />} />
+        <Route path="/about/authority" element={<Authority />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>

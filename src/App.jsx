@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import "./App.css";
-import logo from "./assets/images/p2logo.png";
 import chairmanImg from "./assets/images/chairman_img.png";
 import mdImg from "./assets/images/md_img.jpg";
 import jmdImg from "./assets/images/jmd_img.jpg";
@@ -48,7 +47,7 @@ function App() {
       text: "Inauguration of Unit-I",
     },
     {
-      text: "Inauguration of of Unit-II",
+      text: "Inauguration of Unit-II",
     },
     {
       text: "Machine Hall, Power House.",

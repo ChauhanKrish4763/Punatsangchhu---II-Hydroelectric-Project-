@@ -1,59 +1,290 @@
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: transparent;
-    padding: 1rem;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  padding: 1rem;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
 }
 
 .logo-container {
-    display: flex;
-    align-items: center;
-    margin-top: 35px;
-    margin-left: 150px;
+  display: flex;
+  align-items: center;
+  margin-top: 35px;
+  margin-left: 150px;
 }
 
 .project-title {
-    color: #fff;
-    font-size: 1.2rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    white-space: nowrap;
-    width: auto;
+  color: #fff;
+  font-size: 1.2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  white-space: nowrap;
+  width: auto;
 }
 
 .nav-links {
-    display: flex;
-    justify-content: flex-end;
-    gap: 2rem;
-    margin-right: 150px;
-    margin-top: 35px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+  margin-right: 150px;
+  margin-top: 35px;
 }
 
 .nav-links a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.1rem;
-    position: relative;
-    transition: color 0.3s ease;
-    font-family: 'Roboto', sans-serif;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  position: relative;
+  transition: color 0.3s ease;
+  font-family: 'Roboto', sans-serif;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+  font-weight: bold;
+}
+
+.nav-item {
+  position: relative;
+  padding: 10px 0;
+  z-index: 10000;
 }
 
 .nav-links a::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    left: 0;
-    transition: width 0.3s ease;
+  content: '';
+  position: absolute;
+  width: 0;
+  left: 0;
+  transition: width 0.3s ease;
 }
 
 .nav-links a:hover {
-    color: #7fee43;
+  color: #7fee43;
 }
 
 .nav-links a:hover::after {
-    width: 100%;
+  width: 100%;
 }
+
+/* Dropdown Menu */
+.dropdown-menu {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translateX(-50%) translateY(5px);
+  background-color: rgba(34, 34, 34, 0.95);
+  padding: 10px 0;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  width: max-content;
+  min-width: 140px;
+  max-width: 200px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 10001;
+  pointer-events: none;
+  user-select: none;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  color: #eee;
+}
+
+.nav-item:hover .dropdown-menu,
+.dropdown-menu:hover {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateX(-50%) translateY(5px);
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 12px 20px;
+  font-size: 1rem;
+  color: #ddd;
+  text-decoration: none;
+  border-radius: 6px;
+  margin: 4px 12px;
+  transition: background-color 0.25s ease, color 0.25s ease;
+  text-align: center;
+  user-select: none;
+}
+
+.dropdown-menu a:hover,
+.dropdown-menu a:focus {
+  background-color: #5aba55;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+}
+
+.dropdown-menu::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  width: 10px;
+  height: 10px;
+  background-color: rgba(34, 34, 34, 0.95);
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  z-index: 10002;
+  border-radius: 1px;
+}
+
+/* Sub-dropdown */
+.nav-sub-item {
+  position: relative;
+  z-index: 10002;
+}
+
+.sub-dropdown-menu {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  transform: translateY(-12px);
+  background-color: rgba(34, 34, 34, 0.95);
+  padding: 10px 0;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  width: max-content;
+  min-width: 140px;
+  max-width: 200px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 10002;
+  pointer-events: none;
+  user-select: none;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  color: #eee;
+}
+
+.nav-sub-item:hover .sub-dropdown-menu,
+.sub-dropdown-menu:hover {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateX(0) translateY(-12px);
+}
+
+.sub-dropdown-menu a {
+  display: block;
+  padding: 12px 20px;
+  font-size: 1rem;
+  color: #ddd;
+  text-decoration: none;
+  border-radius: 6px;
+  margin: 4px 12px;
+  transition: background-color 0.25s ease, color 0.25s ease;
+  text-align: center;
+  user-select: none;
+}
+
+.sub-dropdown-menu a:hover {
+  background-color: #5aba55;
+  color: #fff;
+}
+
+/* Flip sub-dropdown to the left if needed */
+.nav-sub-item.open-left .sub-dropdown-menu {
+  left: auto;
+  right: 100%;
+  transform: translateX(0) translateY(-12px);
+}
+
+/* Animation for read-more page */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.read-more-page h1,
+.read-more-page p {
+  opacity: 0;
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.read-more-page p {
+  animation-delay: 0.2s;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.5rem 1rem;
+  }
+
+  .logo-container {
+    margin-left: 0;
+    margin-top: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .project-title {
+    font-size: 1rem;
+    white-space: normal;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px 0 0 0;
+    gap: 1rem;
+    width: 100%;
+    margin-right: 0;
+    margin-top: 20px;
+  }
+
+  .nav-links a {
+    font-size: 1rem;
+  }
+
+  .navbar-default .logo-container,
+  .navbar-default .nav-links,
+  .navbar-home .logo-container,
+  .navbar-home .nav-links {
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 0.5rem;
+  }
+
+  .project-title {
+    font-size: 0.95rem;
+  }
+
+  .nav-links a {
+    font-size: 0.95rem;
+  }
+}
+
+.compact-navbar .logo-container,
+.compact-navbar .nav-links {
+  margin-top: 5px;
+}
+
+.logo-container,
+.nav-links {
+  transition: margin-top 0.5s ease;
+}
+
