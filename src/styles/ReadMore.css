@@ -1,7 +1,7 @@
 .read-more-page {
     background-color: #f8f9fa;
     min-height: 100vh;
-    padding: 40px 300px;
+    padding: 160px 300px 40px 300px; /* Increased top padding */
     width: 100%;
     margin: 0;
     box-sizing: border-box;
@@ -15,7 +15,7 @@
 
 @media (max-width: 768px) {
     .read-more-page {
-        padding: 30px 20px;
+        padding: 140px 20px 30px 20px; /* Increased top padding for mobile too */
     }
 
     .read-more-page h1 {
@@ -26,6 +26,8 @@
         font-size: 0.9rem;
     }
 }
+
+
 
 .read-more-page h1 {
     font-size: 2.5rem;
