@@ -113,13 +113,6 @@
   user-select: none;
 }
 
-.dropdown-menu a:hover,
-.dropdown-menu a:focus {
-  background-color: #5aba55;
-  color: #fff;
-  cursor: pointer;
-  outline: none;
-}
 
 .dropdown-menu::before {
   content: '';
@@ -188,10 +181,16 @@
   user-select: none;
 }
 
-.sub-dropdown-menu a:hover {
-  background-color: #5aba55;
-  color: #fff;
+.sub-dropdown-menu a,
+.dropdown-menu a {
+  color: #ddd;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+  position: relative;
+  font-weight: 500;
 }
+
+
 
 /* Flip sub-dropdown to the left if needed */
 .nav-sub-item.open-left .sub-dropdown-menu {

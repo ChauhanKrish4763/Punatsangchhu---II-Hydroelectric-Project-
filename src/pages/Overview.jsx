@@ -132,8 +132,8 @@ const Overview = () => {
                   The Bilateral Agreement between the Royal Government of Bhutan (RGoB) and Government of Republic of India (GoI) was signed by:
                 </p>
                 <ul className="timeline-list">
-                  <li>• H.E. Lyonpo Khandu Wangchuk, Hon'ble Minister for Economic Affairs (RGoB)</li>
-                  <li>• H.E. Shri S.M. Krishna, Hon'ble Minister for External Affairs (GoI)</li>
+                  <li>H.E. Lyonpo Khandu Wangchuk, Hon'ble Minister for Economic Affairs (RGoB)</li>
+                  <li>H.E. Shri S.M. Krishna, Hon'ble Minister for External Affairs (GoI)</li>
                 </ul>
                 <p className="timeline-text mt-2">
                   Foundation stone laid jointly by H.E. Jigme Y. Thinley, Hon'ble Prime Minister of Bhutan and H.E. Dr. Manmohan Singh, Hon'ble Prime Minister of India.

@@ -28,7 +28,7 @@ const Navbar = () => {
           <Link to="/">ABOUT</Link>
           <div className="dropdown-menu">
             <div className="nav-sub-item">
-              <Link to="/about/about_us">About us</Link>
+              <Link to="/">About us</Link>
               <div className="sub-dropdown-menu">
                 <Link to="/about/authority">Authority</Link>
                 <Link to="/about/honor_board">Honor Board</Link>

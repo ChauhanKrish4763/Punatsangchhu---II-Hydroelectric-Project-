@@ -7,6 +7,12 @@ import ReadMore from './pages/ReadMore';
 import Navbar from './pages/Navbar';
 import Management from './pages/Management';
 import Authority from './pages/Authority.jsx';
+import Overview from './pages/Overview.jsx';
+import PhysicalProgress from './pages/PhysicalProgress.jsx';
+import HonorBoard from './pages/HonorBoard.jsx';
+import SalientFeatures from './pages/SalientFeatures.jsx';
+import Consultants from './pages/Consultants.jsx';
+import Infrastructure from './pages/Infrastructure.jsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -21,6 +27,12 @@ createRoot(document.getElementById('root')).render(
         <Route path="/director_technical" element={<Management />} />
         <Route path="/director_finance" element={<Management />} />
         <Route path="/about/authority" element={<Authority />} />
+        <Route path="/about/overview" element={<Overview />} />
+        <Route path="/main_packages/physical_progress" element={<PhysicalProgress />} />
+        <Route path="/about/honor_board" element={<HonorBoard/>}/>
+        <Route path="/about/salient_feature" element={<SalientFeatures/>}/>
+        <Route path="/about/consultants" element={<Consultants/>}/>
+        <Route path="/main_packages/infrastructure" element={<Infrastructure  />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>

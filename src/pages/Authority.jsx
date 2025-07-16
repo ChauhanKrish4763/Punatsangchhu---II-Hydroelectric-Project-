@@ -1,40 +1,22 @@
-import React from "react";
-import { useState } from "react";
 import "../styles/Authority.css";
 import projectVideo from "../assets/videos/project-authority.mp4";
+import HeroSection from "./HeroSection";
 
 const Authority = () => {
-  const [videoReady, setVideoReady] = useState(false);
   return (
     <>
       {/* Hero Section */}
-      <section className="hero-container">
-        <video
-          className="hero-bg-video"
-          autoPlay
-          muted
-          loop
-          playsInline
-          onCanPlayThrough={() => setVideoReady(true)}
-          style={{ display: videoReady ? "block" : "none" }}
-        >
-          <source src={projectVideo} type="video/mp4" />
-        </video>
-
-        <div className="hero-overlay">
-          <h1 className="hero-heading">Project Authority</h1>
-        </div>
-      </section>
+      <HeroSection videoSrc={projectVideo} title="Project Authority" />
 
       {/* Main Content */}
       <main className="project-authority-page">
         <section>
-          <h2 className="section-heading">I) MEMBERS</h2>
+          <h2 className="section-heading">MEMBERS</h2>
           <div className="sub-section">
             <h3 className="sub-heading">Royal Government of Bhutan</h3>
             <ul className="custom-list">
               <li>
-                Hon’ble Lyonpo Gem Tshering – Chairman, Minister, Ministry of
+                Hon'ble Lyonpo Gem Tshering – Chairman, Minister, Ministry of
                 Energy and Natural Resources
               </li>
               <li>
@@ -70,10 +52,7 @@ const Authority = () => {
                 Hydroelectric Project Authority (PHPA-II)
               </li>
             </ul>
-          </div>
-
-          <div className="sub-section">
-            <h3 className="sub-heading">B) Permanent Invitees</h3>
+            <h3 className="sub-heading">Permanent Invitees</h3>
             <ul className="custom-list">
               <li>Ambassador of India to Bhutan</li>
               <li>Ambassador of Bhutan to India</li>
@@ -97,7 +76,7 @@ const Authority = () => {
 
         <section>
           <h2 className="section-heading">
-            II) Technical Coordination Committee (TCC)
+            Technical Coordination Committee (TCC)
           </h2>
           <div className="sub-section">
             <ul className="custom-list">
@@ -109,13 +88,13 @@ const Authority = () => {
               <li>MD, PHPA-II</li>
               <li>Jt. MD, PHPA-II</li>
               <li>Director (Technical), PHPA-II</li>
-              <li>Engineer Officer to Hon’ble Chairman, PHPA-II</li>
+              <li>Engineer Officer to Hon'ble Chairman, PHPA-II</li>
             </ul>
           </div>
         </section>
 
         <section>
-          <h2 className="section-heading">III) The Management</h2>
+          <h2 className="section-heading">The Management</h2>
           <div className="sub-section">
             <ul className="custom-list">
               <li>Managing Director</li>
@@ -127,7 +106,7 @@ const Authority = () => {
         </section>
 
         <section>
-          <h2 className="section-heading">IV) Consultants</h2>
+          <h2 className="section-heading">Consultants</h2>
           <div className="sub-section">
             <p className="paragraph">
               <strong>WAPCOS Limited</strong>, Ministry of Water Resources,

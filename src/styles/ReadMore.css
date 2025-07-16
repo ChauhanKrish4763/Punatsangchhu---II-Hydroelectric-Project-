@@ -1,47 +1,42 @@
-.read-more-page {
-    background-color: #f8f9fa;
-    min-height: 100vh;
-    padding: 160px 300px 40px 300px; /* Increased top padding */
-    width: 100%;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #2c3e50;
-    line-height: 1.6;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+.physical-progress-enhanced {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 2rem;
+  box-sizing: border-box;
 }
 
-@media (max-width: 768px) {
-    .read-more-page {
-        padding: 140px 20px 30px 20px; /* Increased top padding for mobile too */
-    }
-
-    .read-more-page h1 {
-        font-size: 1.8rem;
-    }
-
-    .read-more-page p {
-        font-size: 0.9rem;
-    }
+/* Ensure all direct children (HeroSection, chart section) have similar bottom margin */
+.physical-progress-enhanced > * {
+  margin-bottom: 2rem;
 }
 
-
-
-.read-more-page h1 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 30px;
-    color: #27ae60;
-    text-align: center;
-    border-bottom: 2px solid #27ae60;
-    padding-bottom: 8px;
+/* Chart section uses the same padding as the root */
+.chart-section-enhanced {
+  background: #fff;
+  border-radius: 24px;
+  padding: 2rem;
+  box-shadow: 0 8px 32px rgba(60, 72, 100, 0.08);
+  margin: 0 auto;
+  max-width: 900px;
+  box-sizing: border-box;
 }
 
-.read-more-page p {
-    font-size: 1rem;
-    margin-bottom: 20px;
-    text-align: justify;
-    color: #555;
+/* Responsive adjustments for tablets */
+@media (max-width: 900px) {
+  .physical-progress-enhanced,
+  .chart-section-enhanced {
+    padding: 1rem;
+  }
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 600px) {
+  .physical-progress-enhanced,
+  .chart-section-enhanced {
+    padding: 0.5rem;
+  }
+  .physical-progress-enhanced > * {
+    margin-bottom: 1rem;
+  }
 }
