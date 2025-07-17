@@ -1,13 +1,5 @@
 import React from 'react';
-import { useLocation } from 'react-router-dom';
 import '../styles/Management.css';
-
-function withLocation(Component) {
-  return function WrappedComponent(props) {
-    const location = useLocation();
-    return <Component {...props} location={location} />;
-  };
-}
 
 class ContentPage extends React.Component {
   render() {
@@ -38,4 +30,4 @@ class ContentPage extends React.Component {
   }
 }
 
-export default withLocation(ContentPage);
+export default ContentPage;

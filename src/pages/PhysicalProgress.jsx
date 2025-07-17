@@ -11,7 +11,7 @@ import {
 } from "recharts";
 import HeroSection from "./HeroSection";
 import "../styles/PhysicalProgress.css";
-import projectVideo from "../assets/videos/project-authority.mp4";
+//import projectVideo from "../assets/videos/project-authority.mp4";
 
 const data = [
   {
@@ -66,7 +66,7 @@ const CustomTooltip = ({ active, payload, label }) => {
 
 const PhysicalProgress = () => (
   <div className="physical-progress-enhanced">
-    <HeroSection videoSrc={projectVideo} title="Physical Progress" />
+    <HeroSection title="Physical Progress" />
 
     {/* Physical Progress Table as of May 31, 2025 */}
     <section className="progress-box progress-table-section">

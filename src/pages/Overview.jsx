@@ -3,12 +3,12 @@ import { Zap, Users, Calendar, Building } from 'lucide-react';
 import CountUp from 'react-countup';
 import HeroSection from './HeroSection';
 import '../styles/Overview.css';
-import projectVideo from "../assets/videos/project-authority.mp4";
+//import projectVideo from "../assets/videos/project-authority.mp4";
 
 const Overview = () => {
   return (
     <div className="overview-container fadeUp">
-      <HeroSection videoSrc={projectVideo} title="Overview" />
+      <HeroSection title="Overview" />
       
       <div className="overview-main fadeUp">
         {/* Key Stats */}

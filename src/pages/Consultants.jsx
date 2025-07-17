@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/Boards.css";
 import HeroSection from "./HeroSection";
-import projectVideo from "../assets/videos/project-authority.mp4";
+//import projectVideo from "../assets/videos/project-authority.mp4";
 
 const sections = [
   {
@@ -56,7 +56,7 @@ const introText = (
 
 const Consultants = () => (
   <div className="board-page">
-    <HeroSection videoSrc={projectVideo} title="Project Consultants" />
+    <HeroSection title="Project Consultants" />
     <div className="board-tables">
       {introText}
       {sections.map((section, idx) => (

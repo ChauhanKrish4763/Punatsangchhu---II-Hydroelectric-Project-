@@ -1,12 +1,12 @@
 import "../styles/Authority.css";
-import projectVideo from "../assets/videos/project-authority.mp4";
+//import projectVideo from "../assets/videos/project-authority.mp4";
 import HeroSection from "./HeroSection";
 
 const Authority = () => {
   return (
     <>
       {/* Hero Section */}
-      <HeroSection videoSrc={projectVideo} title="Project Authority" />
+      <HeroSection title="Project Authority" />
 
       {/* Main Content */}
       <main className="project-authority-page">

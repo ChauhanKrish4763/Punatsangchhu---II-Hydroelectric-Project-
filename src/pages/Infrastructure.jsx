@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/Boards.css";
 import HeroSection from "./HeroSection";
-import projectVideo from "../assets/videos/project-authority.mp4";
+//import projectVideo from "../assets/videos/project-authority.mp4";
 
 const summaryTable = {
   columns: [
@@ -93,7 +93,7 @@ const nonResidentialComplex = {
 
 const Infrastructure = () => (
   <div className="board-page">
-    <HeroSection videoSrc={projectVideo} title="Infrastructure" />
+    <HeroSection title="Infrastructure" />
     <div className="board-tables">
       <div style={{ marginBottom: "1.5rem", color: "#374151", fontSize: "1.08rem" }}>
         Local contractors, involved in both civil and electrical works as of March 30, 2023:
