@@ -59,6 +59,14 @@ const Navbar = () => {
                 </Link>
               </div>
             </div>
+            <div className="nav-sub-item">
+              <Link to="/services/units">Units</Link>
+              <div className="sub-dropdown-menu">
+                <Link to="/units/unit_1">Unit - 1</Link>
+                <Link to="/units/unit_2">Unit - 2</Link>
+                <Link to="/unist/unit_3">Unit - 3</Link>
+              </div>
+            </div>
             <Link to="/services/tender">Tender</Link>
           </div>
         </div>

@@ -39,7 +39,7 @@
   font-size: 1.1rem;
   position: relative;
   transition: color 0.3s ease;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
   font-weight: bold;
 }
@@ -51,7 +51,7 @@
 }
 
 .nav-links a::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 0;
   left: 0;
@@ -86,8 +86,8 @@
   z-index: 10001;
   pointer-events: none;
   user-select: none;
-  text-align: center;
-  font-family: 'Roboto', sans-serif;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   color: #eee;
 }
@@ -109,13 +109,11 @@
   border-radius: 6px;
   margin: 4px 12px;
   transition: background-color 0.25s ease, color 0.25s ease;
-  text-align: center;
   user-select: none;
 }
 
-
 .dropdown-menu::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 50%;
@@ -154,8 +152,8 @@
   z-index: 10002;
   pointer-events: none;
   user-select: none;
-  text-align: center;
-  font-family: 'Roboto', sans-serif;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   color: #eee;
 }
@@ -177,7 +175,7 @@
   border-radius: 6px;
   margin: 4px 12px;
   transition: background-color 0.25s ease, color 0.25s ease;
-  text-align: center;
+  text-align: left;
   user-select: none;
 }
 
@@ -189,8 +187,6 @@
   position: relative;
   font-weight: 500;
 }
-
-
 
 /* Flip sub-dropdown to the left if needed */
 .nav-sub-item.open-left .sub-dropdown-menu {
@@ -286,4 +282,3 @@
 .nav-links {
   transition: margin-top 0.5s ease;
 }
-

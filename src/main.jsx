@@ -37,3 +37,26 @@ createRoot(document.getElementById('root')).render(
     </BrowserRouter>
   </StrictMode>
 );
+
+/*
+
+tasks:
+1. align items to the left in dropdown menu
+2. units section below main packages and tender
+3. environment section
+4. hover image in authority page 
+
+UNIT-I 
+short page details as follows on each UNITs: 
+Design Capacity : launched dated / COD Commercial Operation date : 
+Generated MW till date : 
+Some Pictures :
+
+
+UNIT-II
+UNIT-III
+UNIT-IV   
+till 
+UNIT- VI
+
+*/
