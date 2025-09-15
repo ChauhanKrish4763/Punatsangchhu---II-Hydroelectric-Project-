@@ -1,0 +1,372 @@
+/* C-3 Power House Page Styles */
+
+.c3-powerhouse-page {
+  min-height: 100vh;
+  background: #fff;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    sans-serif;
+}
+
+/* Content Container */
+.c3-powerhouse-content {
+  padding: 2rem 0;
+  background: #f8f9fa;
+}
+
+.content-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Page Header */
+.page-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 2rem 0;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.page-header h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin: 0 0 1rem 0;
+  letter-spacing: -0.02em;
+}
+
+.page-subtitle {
+  font-size: 1.2rem;
+  color: #666;
+  margin: 0;
+  font-weight: 500;
+}
+
+/* Contract Overview Section */
+.contract-overview {
+  margin-bottom: 3rem;
+}
+
+.overview-card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  border: 1px solid #e0e0e0;
+}
+
+.overview-card h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid #e74c3c;
+  display: inline-block;
+}
+
+.contract-details {
+  display: grid;
+  gap: 1rem;
+}
+
+.detail-item {
+  padding: 0.75rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid #e74c3c;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.detail-item strong {
+  color: #2c3e50;
+  margin-right: 0.5rem;
+}
+
+/* Package Components */
+.package-components {
+  margin-bottom: 3rem;
+}
+
+.package-components h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.components-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+.component-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  border: 1px solid #e0e0e0;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.component-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.component-card.primary {
+  border-left: 4px solid #e74c3c;
+  background: linear-gradient(135deg, #fdf2f2, #ffffff);
+}
+
+.component-card.highlight {
+  border-left: 4px solid #f39c12;
+  background: linear-gradient(135deg, #fefbf6, #ffffff);
+}
+
+.component-card h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #e74c3c;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.component-card.highlight h3 {
+  color: #f39c12;
+}
+
+.component-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.component-card li {
+  padding: 0.5rem 0;
+  color: #495057;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.component-card li:before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+.component-card.highlight li:before {
+  color: #f39c12;
+}
+
+/* Special Features Section */
+.special-features {
+  margin-bottom: 3rem;
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  border: 1px solid #e0e0e0;
+}
+
+.special-features h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.features-list {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 12px;
+  border-left: 4px solid #e74c3c;
+  transition: transform 0.2s ease;
+}
+
+.feature-item:hover {
+  transform: translateX(4px);
+}
+
+.feature-icon {
+  font-size: 2rem;
+  min-width: 60px;
+  text-align: center;
+  background: white;
+  padding: 0.75rem;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.feature-content h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin: 0 0 0.5rem 0;
+}
+
+.feature-content p {
+  font-size: 1rem;
+  color: #666;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Technical Specifications */
+.technical-specs {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  border: 1px solid #e0e0e0;
+}
+
+.technical-specs h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.specs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+}
+
+.spec-item {
+  text-align: center;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #fdf2f2, #f8f9fa);
+  border-radius: 12px;
+  border: 2px solid #e74c3c;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.spec-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(231, 76, 60, 0.2);
+}
+
+.spec-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #e74c3c;
+  margin-bottom: 0.5rem;
+  line-height: 1;
+}
+
+.spec-label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #2c3e50;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .content-container {
+    padding: 0 1rem;
+  }
+
+  .page-header h1 {
+    font-size: 2.2rem;
+  }
+
+  .page-subtitle {
+    font-size: 1rem;
+  }
+
+  .components-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .component-card {
+    padding: 1rem;
+  }
+
+  .feature-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .feature-icon {
+    align-self: center;
+  }
+
+  .specs-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .spec-number {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .c3-powerhouse-content {
+    padding: 1rem 0;
+  }
+
+  .page-header {
+    padding: 1.5rem 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .page-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .overview-card,
+  .special-features,
+  .technical-specs {
+    padding: 1.5rem;
+  }
+
+  .component-card {
+    padding: 1rem;
+  }
+
+  .component-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .specs-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .spec-item {
+    padding: 1rem;
+  }
+
+  .spec-number {
+    font-size: 1.8rem;
+  }
+
+  .spec-label {
+    font-size: 0.9rem;
+  }
+}

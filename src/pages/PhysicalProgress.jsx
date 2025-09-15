@@ -73,7 +73,7 @@ const PhysicalProgress = () => (
       <h4 className="progress-table-title">
         Physical Progress as of May 31, 2025
       </h4>
-      <table className="progress-table">
+      <table className="table board-tables">
         <thead>
           <tr>
             <th>Item</th>

@@ -62,9 +62,12 @@ const Navbar = () => {
             <div className="nav-sub-item">
               <Link to="/services/units">Units</Link>
               <div className="sub-dropdown-menu">
-                <Link to="/units/unit_1">Unit - 1</Link>
-                <Link to="/units/unit_2">Unit - 2</Link>
-                <Link to="/unist/unit_3">Unit - 3</Link>
+                <Link to="/services/units/unit_1">Unit - 1</Link>
+                <Link to="/services/units/unit_2">Unit - 2</Link>
+                <Link to="/services/units/unit_3">Unit - 3</Link>
+                <Link to="/services/units/unit_4">Unit - 4</Link>
+                <Link to="/services/units/unit_5">Unit - 5</Link>
+                <Link to="/services/units/unit_6">Unit - 6</Link>
               </div>
             </div>
             <Link to="/services/tender">Tender</Link>
